@@ -26,7 +26,7 @@ export default function Home() {
 					setTitle(data.title);
 				})
 				.catch((error) => {
-					alert(error);
+					console.log(error);
 				});
 		}
 	}, [longurl]);
@@ -46,7 +46,7 @@ export default function Home() {
 				setLoading(false);
 			}
 		} catch (error) {
-			alert("Getting long url exception");
+			console.log("Getting long url exception");
 			setLoading(false);
 		}
 	};
