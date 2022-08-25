@@ -1,26 +1,53 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
+		Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+		Helvetica Neue, sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.search {
+	width: 50%;
+	display: flex;
+}
+
+.searchTerm {
+	width: 100%;
+	border: 3px solid #00b4cc;
+	border-right: none;
+	padding: 5px;
+	height: 50px;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+	color: #9dbfaf;
+}
+
+.searchTerm:focus {
+	color: #00b4cc;
+}
+
+.searchButton {
+	border: 1px solid #00b4cc;
+	background: #00b4cc;
+	text-align: center;
+	color: #fff;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+	width: 100%;
+	transform: translate(-50%, -50%);
 }
