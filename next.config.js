@@ -2,7 +2,7 @@
 const nextConfig = {
 	reactStrictMode: true,
 	env: {
-		NEXT_PUBLIC_API: "https://expand-url.vercel.app/api/",
+		NEXT_PUBLIC_API: "http://localhost:3000/api",
 	},
 };
 
